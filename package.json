@@ -1,0 +1,40 @@
+{
+  "name": "saucedemo-playwright-automation",
+  "version": "1.0.0",
+  "description": "Playwright automation suite for SauceDemo website with POM structure and data-driven testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:sequential": "npx playwright test --workers=1",
+    "test:login": "npx playwright test tests/login.spec.js",
+    "test:login-failure": "npx playwright test tests/login-failure.spec.js",
+    "test:cart": "npx playwright test tests/cart-operations.spec.js",
+    "test:login:sequential": "npx playwright test tests/login.spec.js --workers=1",
+    "test:login-failure:sequential": "npx playwright test tests/login-failure.spec.js --workers=1",
+    "test:cart:sequential": "npx playwright test tests/cart-operations.spec.js --workers=1",
+    "test:chrome": "npx playwright test --project=chrome",
+    "test:parallel": "npx playwright test --workers=6",
+    "test:sequential:headed": "npx playwright test --workers=1 --headed",
+    "test:ui": "npx playwright test --ui",
+    "report": "npx playwright show-report",
+    "install:browsers": "npx playwright install"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "e2e",
+    "saucedemo",
+    "pom",
+    "data-driven"
+  ],
+  "author": "Playwright MCP Automation",
+  "license": "MIT",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "playwright": "^1.55.0"
+  }
+}
