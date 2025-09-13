@@ -1,0 +1,67 @@
+{
+  "validUsers": [
+    {
+      "id": "standard_user",
+      "username": "standard_user",
+      "password": "secret_sauce",
+      "userType": "Standard User",
+      "description": "Standard user with full access"
+    },
+    {
+      "id": "performance_glitch_user",
+      "username": "performance_glitch_user", 
+      "password": "secret_sauce",
+      "userType": "Performance Glitch User",
+      "description": "User with performance issues simulation"
+    },
+    {
+      "id": "problem_user",
+      "username": "problem_user",
+      "password": "secret_sauce", 
+      "userType": "Problem User",
+      "description": "User with various UI issues"
+    }
+  ],
+  "problematicUsers": [
+    {
+      "id": "error_user",
+      "username": "error_user",
+      "password": "secret_sauce",
+      "userType": "Error User", 
+      "description": "User that encounters errors - may not login successfully"
+    },
+    {
+      "id": "locked_out_user",
+      "username": "locked_out_user",
+      "password": "secret_sauce",
+      "userType": "Locked Out User", 
+      "description": "User that is locked out"
+    }
+  ],
+  "invalidUsers": [
+    {
+      "id": "invalid_username",
+      "username": "invalid_user",
+      "password": "secret_sauce",
+      "expectedError": "Epic sadface: Username and password do not match any user in this service"
+    },
+    {
+      "id": "invalid_password",
+      "username": "standard_user",
+      "password": "wrong_password",
+      "expectedError": "Epic sadface: Username and password do not match any user in this service"
+    },
+    {
+      "id": "empty_credentials",
+      "username": "",
+      "password": "",
+      "expectedError": "Epic sadface: Username is required"
+    },
+    {
+      "id": "empty_password",
+      "username": "standard_user",
+      "password": "",
+      "expectedError": "Epic sadface: Password is required"
+    }
+  ]
+}
